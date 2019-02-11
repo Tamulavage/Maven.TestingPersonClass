@@ -95,4 +95,45 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testSetSex() {
+        // Given
+        Person person = new Person();
+        String expected = "M";
+
+        // When
+        person.setSex(expected);
+
+        // Then
+        String actual = person.getSex();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testHasSiblings() {
+        // Given
+        Person person = new Person();
+        boolean expected = true;
+
+        // When
+        person.setHasSiblings(expected);
+
+        // Then
+        boolean actual = person.getHasSiblings();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testIsLiving() {
+        // Given
+        Person person = new Person();
+        boolean expected = true;
+
+        // When
+        person.setIsLiving(expected);
+
+        // Then
+        boolean actual = person.getIsLiving();
+        Assert.assertEquals(expected, actual);
+    }
+
 }
